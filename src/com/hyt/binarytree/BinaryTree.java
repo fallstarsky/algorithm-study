@@ -218,6 +218,17 @@ public class BinaryTree {
     }
 
 
+
+
+    /**
+     * 查询当前节点的后继节点
+     * @param node
+     */
+    public Node getPrecursor(Node node) {
+        return null;
+    }
+
+
     public static void main(String[] args) {
         final Node node = createNode();
         BinaryTree binaryTree = new BinaryTree();
