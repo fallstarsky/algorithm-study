@@ -9,28 +9,9 @@ public class BinaryTreeDistanceProblem {
 
     public static void main(String[] args) {
         BinaryTreeDistanceProblem binaryTreeDistanceProblem = new BinaryTreeDistanceProblem();
-        final Node node = binaryTreeDistanceProblem.create();
+        final Node node = NodeUtils.create();
         final int i = binaryTreeDistanceProblem.maxDistance(node);
         System.out.println(i);
-    }
-
-    /**
-     *  创建二叉树
-     */
-    public Node create() {
-        Node node = new Node(1);
-
-        node.left = new Node(2);
-        node.right = new Node(3);
-        node.left.left = new Node(4);
-        node.left.right = new Node(5);
-
-
-        node.left.left.left = new Node(4);
-        node.left.left.left.left = new Node(4);
-        node.left.right.right = new Node(5);
-
-        return node;
     }
 
     /**
